@@ -1,0 +1,25 @@
+#recettes {
+    background-color: #fafafa;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,44 @@
+<!-- login.component.html -->
+<div class="login-container d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-4 rounded">
+      <div class="card-body">
+        <h3 class="text-center mb-4">Connexion</h3>
+        <form  novalidate>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+              <input type="email" class="form-control" id="email" placeholder="Entrez votre email"  name="email" required>
+            </div>
+          </div>
+          
+          <!-- Mot de passe -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" name="password" required>
+            </div>
+          </div>
+  
+          <!-- Se souvenir de moi -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+          </div>
+  
+          <!-- Bouton de connexion -->
+          <button type="submit" class="btn btn-success w-100">Se connecter</button>
+        </form>
+  
+        <div class="text-center mt-3">
+          <a href="#" class="text-muted">Mot de passe oublié ?</a>
+        </div>
+        <div class="text-center mt-3">
+          <p>Vous n'avez pas de compte ? <a href="#" class="text-success">Créer un compte</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,105 @@
+#recipe-detail {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+#recipe-detail h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#recipe-detail h4 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.recipe-header img {
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.recipe-section ul, .recipe-section ol {
+  padding-left: 20px;
+}
+
+.recipe-section li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.recipe-section i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.comment {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+  font-weight: bold;
+}
+
+.comments-section {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.comment p {
+  color: #555;
+}
+
+form .form-label {
+  font-weight: bold;
+}
+
+form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+}
+
+form .btn-success {
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+form .btn-success:hover {
+  background-color: #218838;
+}
+
+.similar-recipes {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.similar-recipes ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.similar-recipes li {
+  margin-bottom: 12px;
+}
+
+.similar-recipes a {
+  text-decoration: none;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.similar-recipes a:hover {
+  color: #218838;
+}

@@ -1,0 +1,22 @@
+#categories {
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-outline-success {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+}

@@ -1,27 +1,85 @@
-# FlavorShare
+# 🍽️ RecipeApp – Application de consultation de recettes (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.18.
+Bienvenue sur **RecipeApp**, une application web responsive de consultation de recettes de cuisine, développée avec Angular 18, Bootstrap 5 et JSON Server. Ce projet permet de consulter, rechercher, filtrer, commenter et noter des recettes.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Objectifs du projet
 
-## Code scaffolding
+- Pratiquer Angular (routes, composants, services, formulaires, pipes)
+- Utiliser Bootstrap pour une interface moderne
+- Créer un backend simple 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 💡 Fonctionnalités principales (User Stories)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Utilisateur non connecté
+- ✅ Consulter la liste des recettes
+- ✅ Voir les détails d'une recette (nom, photo, catégorie, ingrédients, étapes)
+- ✅ Rechercher une recette par nom ou chef
+- ✅ Filtrer par catégorie (végétarien, dessert, etc.) ou ingrédient principal
+- ✅ Voir les avis et notes des autres utilisateurs
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📄 Maquettes (Design UI)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Créées avec **Figma**  :
 
-## Further help
+- **Accueil** : Grille de recettes tendance avec catégories en haut
+- **Détail recette** : Grande image, ingrédients, étapes, notes, commentaires
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+
+## 🚧 Technologies utilisées
+
+| Technologie         | Description                              |
+|---------------------|------------------------------------------|
+| Angular 18         | Framework frontend SPA                   |
+| TypeScript          | Langage de développement principal       |
+| HTML/CSS            | Structure et style de base               |
+| Bootstrap 5         | UI Framework pour le design responsive   |
+| JSON Server         | API REST mock pour les recettes          |
+| LocalStorage        | Authentification locale simple           |
+| Postman             | Test des requêtes API                    |
+| Git & GitHub        | Contrôle de version                     |
+| Angular CLI         | Création et gestion du projet Angular    |
+
+---
+
+## 📆 Installation & lancement
+
+### 1. Cloner le projet
+
+```bash
+https://github.com/MrRidadev/Plateforme-de-partage-de-recettes-de-cuisine.git
+cd FlavorShare
+```
+
+### 2. Installer les dépendances
+
+```bash
+npm install
+```
+
+### 3. Lancer l'application Angular
+
+```bash
+ng serve
+```
+
+
+
+---
+
+## 🚤 Auteur
+
+**Nom :** Rida Kiratte  
+**Statut :** Développeur Web Freelance  
+**Email :** kiratterida@gmail.com  
+
+---
+

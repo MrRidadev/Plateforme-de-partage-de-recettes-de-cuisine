@@ -42,22 +42,24 @@
           <h4>Commentaires :</h4>
           <div class="comments-section">
             <div class="comment mb-4">
-              <strong class="d-block">Marie :</strong>
               <p>"Délicieuse recette ! La mozzarella fond parfaitement et la pâte est super légère. Une vraie réussite."</p>
             </div>
             <div class="comment mb-4">
-              <strong class="d-block">Paul :</strong>
               <p>"J'adore cette pizza ! Facile à préparer et parfaite pour un dîner entre amis."</p>
             </div>
+            <div class="comment mb-4">
+              <p *ngIf="comentaireEnvoye" > {{comentaireEnvoye}} </p>
+            </div>
           </div>
+          
 
           <h5>Laisser un Commentaire :</h5>
           <form>
             <div class="mb-3">
               <label for="comment" class="form-label">Votre commentaire</label>
-              <textarea class="form-control" id="comment" rows="4" placeholder="Écrivez votre commentaire..."></textarea>
+              <textarea class="form-control" id="comment" rows="4" placeholder="Écrivez votre commentaire..." name="comentaire" [(ngModel)]="comentaire"></textarea>
             </div>
-            <button type="submit" class="btn btn-success">Envoyer</button>
+            <button (click)="envoyerComentaire()" type="submit" class="btn btn-success">Envoyer</button>
           </form>
         </div>
       </div>

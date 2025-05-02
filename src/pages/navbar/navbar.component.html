@@ -21,8 +21,8 @@
             <a class="nav-link" routerLink="/Connexion">Connexion</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" name="search" placeholder="Rechercher une recette..." aria-label="Search">
+        <form class="d-flex" role="search" (ngSubmit)="search()" #searchForm="ngForm">
+          <input class="form-control me-2"type="search" name="search" [(ngModel)]="searchQuery" placeholder="Rechercher une recette..." required>
           <button class="btn btn-outline-success" type="submit">Rechercher</button>
         </form>
       </div>

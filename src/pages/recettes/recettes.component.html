@@ -4,60 +4,11 @@
       <div class="row g-4">
         
         <!-- Recette 1 -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" *ngFor="let recipe of recipes">
           <div class="card h-100 shadow-sm">
-            <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Pizza Margherita">
+            <img [src]="recipe.strMealThumb" alt="{{ recipe.strMeal }}" class="card-img-top" alt="Pizza Margherita">
             <div class="card-body">
-              <h5 class="card-title">Pizza Margherita</h5>
-              <p class="card-text">Savoureuse pizza italienne traditionnelle avec mozzarella fraîche et basilic.</p>
-              <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Recette 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://img.freepik.com/photos-gratuite/salade-cesar-aux-crevettes-frites_140725-3718.jpg?ga=GA1.1.1856760568.1745852550&semt=ais_hybrid&w=740" class="card-img-top" alt="Salade César">
-            <div class="card-body">
-              <h5 class="card-title">Salade César</h5>
-              <p class="card-text">Une salade fraîche et croquante au poulet grillé et sauce crémeuse maison.</p>
-              <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Recette 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://img.freepik.com/photos-gratuite/composition-savoureuses-crepes-petit-dejeuner_23-2148829556.jpg?ga=GA1.1.1856760568.1745852550&semt=ais_hybrid&w=740" class="card-img-top" alt="Pancakes maison">
-            <div class="card-body">
-              <h5 class="card-title">Pancakes Moelleux</h5>
-              <p class="card-text">De délicieux pancakes légers pour vos brunchs en famille ou entre amis.</p>
-              <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Recette 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://img.freepik.com/photos-gratuite/assortiment-verres-milkshake-aux-fruits-chocolat_23-2148707756.jpg?ga=GA1.1.1856760568.1745852550&semt=ais_hybrid&w=740" class="card-img-top" alt="Smoothie">
-            <div class="card-body">
-              <h5 class="card-title">Smoothie aux Fruits</h5>
-              <p class="card-text">Un cocktail vitaminé pour démarrer la journée avec énergie !</p>
-              <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Recette 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Tarte aux pommes">
-            <div class="card-body">
-              <h5 class="card-title">Tarte aux Pommes</h5>
-              <p class="card-text">Le grand classique : une tarte fondante aux pommes caramélisées.</p>
+              <h5 class="card-title">{{ recipe.strMeal  }}</h5>
               <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
             </div>
           </div>

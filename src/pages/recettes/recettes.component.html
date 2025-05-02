@@ -9,7 +9,7 @@
             <img [src]="recipe.strMealThumb" alt="{{ recipe.strMeal }}" class="card-img-top" alt="Pizza Margherita">
             <div class="card-body">
               <h5 class="card-title">{{ recipe.strMeal  }}</h5>
-              <a routerLink="/recipe" class="btn btn-success">Voir la recette</a>
+              <a [routerLink]="['/recipe', recipe.idMeal]" class="btn btn-success">Voir la recette</a>
             </div>
           </div>
         </div>

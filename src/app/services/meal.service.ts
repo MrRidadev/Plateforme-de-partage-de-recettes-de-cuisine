@@ -17,9 +17,10 @@ export class MealService {
   }
 
   getRecipe(id: number): Observable<any> {
-    const apiUrl = 'www.themealdb.com/api/json/v1/1/lookup.php?i=52772'
+    const apiUrl = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`;
     return this.http.get<any>(apiUrl);
   }
+  
 
   
 }

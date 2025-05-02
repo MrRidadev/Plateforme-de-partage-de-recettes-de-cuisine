@@ -6,9 +6,13 @@ import { RecettesComponent } from '../pages/recettes/recettes.component';
 import { ConnexionComponent } from '../pages/connexion/connexion.component';
 
 export const routes: Routes = [
+
     {
         path:'',
         component : HeaderComponent
+    },
+    { path: 'recipe/:id',
+         component: RecipeDetailComponent 
     },
     {
         path:'recipe',
